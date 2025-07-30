@@ -3,11 +3,12 @@ marp: true
 theme: gaia
 style: |
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Sans+JP:wght@400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap');
 
   /* 全体設定 */
   section {
     background-color: #f8f9fa;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: monospace;
     color: #343a40;
     padding: 60px;
   }
@@ -19,7 +20,7 @@ style: |
 
   /* 見出し */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Noto Sans JP';
     color: #212529;
     border-bottom: 2px solid #007bff;
     padding-bottom: 10px;
@@ -41,10 +42,11 @@ style: |
   }
 
   /* コードブロック */
-  pre {
-    border: 1px solid #dee2e6;
+  pre, pre code, code, code * {
+    font-family: 'Source Code Pro';
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    color: white;
+    background-color: #194d4cff;
   }
   
   /* フッター */
